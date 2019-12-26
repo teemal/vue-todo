@@ -49,7 +49,6 @@ export default {
       .then(res => this.todos = this.todos.filter(todo => todo.id != id, res.data))
       .catch(err => console.log(err));
     },
-    
     addTodo(newTodo){
       const { id, title, completed } = newTodo;
 
